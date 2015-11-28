@@ -1,0 +1,149 @@
+   <!DOCTYPE  html>
+   <html  lang="uk">
+
+       <head>
+<meta  charset="UTF-8"/>
+<title>Сервіс  Обліку  Студентів</title>
+<meta  name="description" value="Система  Обліку  Студентів  Навчального  Закладу"  />
+
+ <!--  Include  Styles  -->
+ <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+ <link  rel="stylesheet"  href="./css/main.css">
+ <!--  Javascripts  Section  -->
+ <script  src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script> 
+
+ <script  src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+ <!--style  type="text/css">.col-xs-12,  .col-xs-4,  .col-xs-8  -->
+ <!-- {border: 1px  solid  red;} -->
+ </style>
+
+        </head>
+
+
+<body>
+
+ <!--  Start  Container  -->
+ <div  class="container">
+
+
+ <!--  Start  Main  Page  Content  -->
+ <div  class="row"  id="content-columns">
+
+   <div  class="col-xs-12"  id="content-column">
+
+ <!--  Status  Message  -->
+   <h2>Форма редагування Студента</h2>
+
+
+ <!--  Start  Students  Listing  -->
+ <!--  End  Students  Listing  -->
+
+
+   </div>
+
+ </div>
+ <!--  End  Main  Page  Content  -->
+<form class="form-horizontal">
+ <div class="form-group">
+  <label for="fname" class="col-sm-2 control-label">Ім'я*</label>
+  <div class="col-sm-3">
+   <input type="tname" class="form-control" id="fname" value="Віталій" >
+  </div>
+ </div>
+
+ <div class="form-group">
+  <label for="tname" class="col-sm-2 control-label">По-батькові</label>
+  <div class="col-sm-3">
+   <input type="tname" class="form-control" id="fname" value="Іванович" >
+  </div>
+ </div>
+
+ <div class="form-group">
+  <label for="sname" class="col-sm-2 control-label">Прізвище*</label>
+  <div class="col-sm-3">
+   <input type="sname" class="form-control" id="sname" value="Подоба" >
+  </div>
+ </div>
+
+ <div class="form-group">
+  <label for="nbil" class="col-sm-2 control-label">№ Білету*</label>
+  <div class="col-sm-3">
+   <input type="nbil" class="form-control" id="nbil" value="254" >
+  </div>
+ </div>
+
+ <div class="form-group">
+  <label for="dateb" class="col-sm-2 control-label">Дата Народження</label>
+  <div class="col-sm-3">
+   <input type="dateb" class="form-control" id="dateb" value="1984-06-17" >
+  </div>
+ </div>
+ <div class="form-group">
+  <label for="foto" class="col-sm-2 control-label">Фото</label>
+  <div class="col-sm-4">
+   <p>Наразі: <a href="#">student_photos/None_podoba3_1.jpeg</a>
+   <label>
+           <input type="checkbox"  id="blankCheckbox" value="option1"  
+              aria-label="...">  </label>      
+   Очистити  </p> 
+    </div>
+   </div>
+
+ <div class="form-group">
+  <label for="foto1" class="col-sm-2 control-label"></label>
+  <div class="col-sm-3">
+     <p>Змінити: 
+         <button type="submit" class="btn btn-default btn-xs">Choose file</button>
+        No file choosen</p>
+    </div>
+  </div>
+
+
+ <div class="form-group"> 
+  <label for="gr" class="col-sm-2 control-label">Група</label>
+ <div  class="col-sm-3"  >
+
+ <select class="form-control">
+ <option>МтМ-2</option>
+ <option>МтМ-22</option>
+ <option>Мтм-23</option>
+ </select>
+ </div>
+ </div>
+
+ <div class="form-group"> 
+  <label for="gr" class="col-sm-2 control-label">Додаткові нотатки</label>
+ <div  class="col-sm-3"  >
+  <textarea class="form-control" rows="3">тест d</textarea>
+</div>
+</div>
+
+<!--  Start  Footer  -->
+ <div  class="row"  id="footer">
+  <div  class="col-xs-12">
+  </div>
+ </div>
+ <!--  End  Footer  -->
+
+
+
+ <div class="form-group">
+   <label for="but1" class="col-sm-2 control-label"></label>
+  <div class="col-sm-3">
+   <button type="submit" class="btn btn-primary">Зберегти</button>
+   <button type="submit" class="btn btn-link">Скасувати</button>
+  </div>
+ </div>
+
+
+</form>
+ </div>
+ <!--  End  Container  -->
+
+
+
+</body>
+
+
+</html>

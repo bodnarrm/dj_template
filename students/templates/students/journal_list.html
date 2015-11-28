@@ -1,0 +1,233 @@
+{%  extends  "students/base.html"  %}
+
+{% load  static  from  staticfiles  %}
+
+{% block meta_title  %} Сервіс Обліку Студентів {% endblock meta_title  %}
+
+{% block title  %}Облік Відвідуваня {% endblock title %}
+
+{% block content %}
+
+<div class="text-center">
+    <ul class="pagination" <a href="..."></a> </ul>
+     <span class="glyphicon glyphicon-arrow-left"> </span>
+        
+        <a href="...">Жовтень 2014</a></li>
+	<a  href="#">&raquo;</a></li>
+    </ul>
+</div>
+
+ <!--  Start  Students  Listing  -->
+ <table  class="table  table-bordered" id="cssTable">
+  <thead>
+   <tr>
+   <th align="center" class="col-xs-1">№</th>
+   <th align="center" class="col-xs-1">Студент</th>
+   <td class="col-xs-1">Ср 1</th>
+   <td class="col-xs-1">Чт 2</th>
+   <td class="col-xs-1">Пт 3</th>
+   <td class="col-xs-1">Сб 4</th>
+   <td class="col-xs-1">Нд 5</th>
+   <td class="col-xs-1">Пн 6</th>
+   <td class="col-xs-1">Вт 7</th>
+   <td class="col-xs-1">Ср 8</th>
+   <td class="col-xs-1">Чт 9</th>
+   <td class="col-xs-1">Пт 10</th>
+   <td class="col-xs-1">Сб 11</th>
+   <td class="col-xs-1">Нд 12</th>
+   <td class="col-xs-1">Пн 13</th>
+   <td class="col-xs-1">Вт 14</th>
+   <td class="col-xs-1">Ср 15</th>
+   <td class="col-xs-1">Чт 16</th>
+   <td class="col-xs-1">Пт 17</th>
+   <td class="col-xs-1">Сб 18</th>
+   <td class="col-xs-1">Нд 19</th>
+   <td class="col-xs-1">Пн 20</th>
+   <td class="col-xs-1">Вт 21</th>
+   <td class="col-xs-1">Ср 22</th>
+   <td class="col-xs-1">Чт 23</th>
+   <td class="col-xs-1">Пт 24</th>
+   <td class="col-xs-1">Сб 25</th>
+   <td class="col-xs-1">Нд 26</th>
+   <td class="col-xs-1">Пн 27</th>
+   <td class="col-xs-1">Вт 28</th>
+   <td class="col-xs-1">Чт 29</th>
+   <td class="col-xs-1">Пт 30</th>
+   <td class="col-xs-1">Сб 31</th>
+
+  </thead>
+ 
+<tbody>
+{%  for  journal  in  journals  %}
+
+ <tr>
+  <td>{{  forloop.counter  }}</td>
+  <td><a  title="Редагувати"  href="{%  url  "students_edit"  journal.id %}">{{  journal.student_name }}</a></td>
+
+    <div class="checkbox">     
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day1  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day2  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day3  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day4  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day5  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day6  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day7  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day8  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day9  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day10  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day11  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day12  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day13  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day14  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day15  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day16  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day17  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day18  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day19  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day20  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day21  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day22  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day23  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day24  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day25  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day26  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day27  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day28  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day29  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day30  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+   <th>
+           <label>
+           <input type="checkbox" {%  if  journal.day31  ==  1 %} checked="checked" {%  endif  %} id="blankCheckbox"                             value="option1" aria-label="...">
+           </label>
+    </th>
+
+
+ </tr>
+
+{% endfor%}
+ </tbody>
+ </table>
+
+ <!--  End  Students  Listing  -->
+
+{% endblock content %}
