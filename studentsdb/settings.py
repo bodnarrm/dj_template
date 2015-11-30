@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'students',
 )
 
@@ -101,7 +102,7 @@ from .db import DATABASES
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uk'
 
 TIME_ZONE = 'UTC'
 
@@ -117,3 +118,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#  email  settings
+#  please,  set  here  you  smtp  server  details  and  your  admin  email
+ADMIN_EMAIL  =  'bodnarrm@gmail.com'
+EMAIL_HOST  =  'smtp.mandrillapp.com'
+EMAIL_PORT  =  '587'
+EMAIL_HOST_USER  =  'bodnarrm@ukr.net'
+EMAIL_HOST_PASSWORD  =  'M__Yx5XzREurZ4Wg6ZGXQw'
+EMAIL_USE_TLS  =  True
+EMAIL_USE_SSL  =  False
+
+CRISPY_TEMPLATE_PACK  =  'bootstrap3'

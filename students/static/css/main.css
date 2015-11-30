@@ -1,38 +1,33 @@
-    /*  –¥  ª®¬¥­â à  ¢  CSS  */
-
     .alert  {
-        /*  Œ¨  ¤®¤ «¨  ¢÷¤áâ ­ì  «¨è¥  §¢¥àåã  ¥«¥¬¥­â :  -top  */
-        margin-top:  10px;
+         margin: 10px 0 5px 0;
     }
-/*  §­ ©è«¨  ¥«¥¬¥­â  äãâ¥à   ¯®  ©®£®  ã­÷ª «ì­®¬ã  ÷¤¥­â¨ä÷ª â®àã   footer  */
-    #footer  {
-/*  § ¤ ó¬®  ¢¥àå­î  ¬¥¦ã  ¥«¥¬¥­â :  è¨à¨­   «÷­÷õ,  â¨¯  «÷­÷õ,  ª®«÷à  «÷­÷õ  */
+
+#footer  {
         border-top:  1px  solid  #dddddd;
-        /*  § ¤ ó¬®  ¢­ãâà÷è­î  ¢÷¤áâ ­ì  ¥«¥¬¥­â   ¤®  ¢¥àå­ì®£®  ªà î  */
         padding-top:  10px;
     }
 
-    /*  Groups  Selector  */
-    #group-selector  {
+#group-selector  {
         margin-top:  30px;
     }
-    #group-selector select  {
+
+#group-selector select  {
         margin:  0;
-        width:  85%;
+        width:  80%;
         background-color:  #ffffff;
         border:  1px  solid  #cccccc;
         height:  30px;
         line-height:  30px;
         color:  #555555;
     }
-        #cssTable td 
-    {
-    text-align:center; 
-    font-weight:  bold;
+
+h1,  h2,  h3,  h4,  h5,  h6  {
+        font-weight:  bold;
     }
 
-
-    /*  Global  Styles  */
-    h1,  h2,  h3,  h4,  h5,  h6  {
-        font-weight:  bold;
+ /*  Form  Styles  */
+    textarea,
+    select,
+    input  {
+        max-width:  300px;
     }

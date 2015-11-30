@@ -1,3 +1,2 @@
-Django==1.8.3
-Pillow 1.7.8
-MySQL-python
+Django==1.8.6
+django-crispy-forms==1.4.0
