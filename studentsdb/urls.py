@@ -17,6 +17,9 @@ from  django.conf.urls  import  patterns,  include,  url
 from  students.views.students  import  StudentList
 from  students.views.students  import  StudentUpdateView
 from  students.views.students  import  StudentDeleteView
+from  students.views.groups  import  GroupUpdateView
+
+
 from  django.contrib  import  admin
 from  .settings  import  MEDIA_ROOT,  DEBUG
 
@@ -32,7 +35,8 @@ urlpatterns  =  patterns('',
     url(r'^students/(?P<pk>\d+)/delete/$', StudentDeleteView.as_view(), name='students_delete'),
     url(r'^groups/$', 'students.views.groups.groups_list',  name='groups'),
     url(r'^groups/add/$',  'students.views.groups.groups_add', name='groups_add'),   
-    url(r'^groups/(?P<gid>\d+)/edit/$', 'students.views.groups.groups_edit',name='groups_edit'),
+#    url(r'^groups/(?P<gid>\d+)/edit/$', 'students.views.groups.groups_edit',name='groups_edit'),
+    url(r'^groups/(?P<pk>\d+)/edit/$', GroupUpdateView.as_view(), name='groups_edit'),
     url(r'^groups/(?P<gid>\d+)/delete/$','students.views.groups.groups_delete', name='groups_delete'),
     url(r'^journal/$',  'students.views.journal.journal_list', name='journal'),
     url(r'^contact-admin/$',  'students.views.contact_admin.contact_admin', name='contact_admin'),

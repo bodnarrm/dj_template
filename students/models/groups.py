@@ -16,3 +16,4 @@ class Group(models.Model):
            return  u"%s  (%s)"  %  (self.title,  self.leader)
        else:
            return  u"%s"  %  (self.title,)
+
